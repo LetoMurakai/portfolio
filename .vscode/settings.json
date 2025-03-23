@@ -1,0 +1,6 @@
+{
+	"code-runner.executorMap": {
+		"javascript": "npx jsx",
+		"typescript": "npx tsx"
+	}
+}
