@@ -1,0 +1,10 @@
+services:
+    - type: web
+      name: my-nest-app
+      env: node
+      plan: free
+      buildCommand: npm install && npx prisma generate && npm run build && npm prune --omit=dev
+      startCommand: node dist/backend/src/main
+      envVars:
+          - key: NODE_ENV
+            value: production
