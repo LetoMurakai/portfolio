@@ -1,6 +1,6 @@
 services:
     - type: web
-      name: my-nest-app
+      name: portifolio
       env: node
       plan: free
       buildCommand: npm install && npx prisma generate && npm run build && npm prune --omit=dev
