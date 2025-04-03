@@ -1,3 +1,4 @@
+import { Tecnologia } from "../tecnologia";
 import { Nivel, Tipo } from "./enums";
 
 interface Projeto {
@@ -9,6 +10,7 @@ interface Projeto {
   nivel: Nivel;
   repositorio: string;
   destaque: boolean;
+  tecnologias: Tecnologia[]
 }
 
 export type {
